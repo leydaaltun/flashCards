@@ -48,7 +48,7 @@ function FlashCards() {
   console.log("test", selectedId);
 
   function handleClick(id) {
-    setSelectedId(id)
+    setSelectedId(id !== selectedId ? id : null);
   }
   return (
     <div className="flashcards">
